@@ -55,12 +55,13 @@ TreeMap * createTreeMap(int (*lower_than) (void* key1, void* key2)) {
 
 void insertTreeMap(TreeMap * tree, void* key, void * value) {
   TreeNode* Nuevo = createTreeNode(key, value);
+  
   if (tree->root == NULL){
     tree->root = Nuevo;
     tree->current = Nuevo;
   }
   else{
-    tree->root = tree->current;
+    tree->current = tree->root;
   }
 
   while(tree->current != NULL){
