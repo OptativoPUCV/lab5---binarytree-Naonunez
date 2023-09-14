@@ -292,3 +292,32 @@ Thu 14 Sep 2023 05:45:51 PM UTC:
  tests:  16|4
 total_score: 30/70
 94f11f8
+Thu 14 Sep 2023 05:59:07 PM UTC: 
+ treemap.c | 27 +++++++++++++++++++++++++++
+ 1 file changed, 27 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:110:30: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  110 |   else if(node->left == NULL && node->right != NULL || node->left != NULL && node->right == NULL){
+      |                              ^
+test.c:503:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+  606 | }
+      | ^
+In file included from test.c:4:
+treemap.c:110:3: note: ‘-Wmisleading-indentation’ is disabled from this point onwards, since column-tracking was disabled due to the size of the code/headers
+  110 |   else if(node->left == NULL && node->right != NULL || node->left != NULL && node->right == NULL){
+      |   ^~~~
+treemap.c:110:3: note: adding ‘-flarge-source-files’ will allow for more column-tracking support, at the expense of compilation time and memory
+test.c:606:1: error: expected declaration or statement at end of input
+  606 | }
+      | ^
+At top level:
+test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a63060b
