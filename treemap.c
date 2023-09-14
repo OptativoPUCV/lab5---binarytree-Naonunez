@@ -84,6 +84,9 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
   if (tree->current != NULL){
     current = tree->root;
   }
+  else{
+    current = tree->root;
+  }
   
   
 
