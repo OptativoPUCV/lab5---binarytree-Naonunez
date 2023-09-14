@@ -92,7 +92,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
       return current->pair;
     }
     else if (compara < 0){
-      return searchTreeMap(current->left, key);
+      return searchTreeMap(tree->current->left, key);
     }
     else {
       return searchTreeMap(current->right, key);
