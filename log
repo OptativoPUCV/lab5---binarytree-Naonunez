@@ -97,3 +97,14 @@ Thu 14 Sep 2023 01:52:56 PM UTC:
  tests:  6|7
 total_score: 5/70
 1061413
+Thu 14 Sep 2023 02:03:08 PM UTC: 
+ treemap.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:90:17: error: ‘current’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   90 |   while(current != NULL){
+      |                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+b88ea75
