@@ -92,10 +92,10 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
       return current->pair;
     }
     else if (compara < 0){
-      return searchTreeMap(tree->current->left, key);
+      current = current->left;
     }
     else {
-      return searchTreeMap(current->right, key);
+      current = current->right;
     }
   }
     return NULL;
