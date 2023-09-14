@@ -67,3 +67,9 @@ treemap.c:87:14: error: assignment to ‘TreeNode *’ from incompatible pointer
 cc1: all warnings being treated as errors
 Compilation failed
 1553446
+Thu 14 Sep 2023 01:34:11 PM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  5|7
+total_score: 5/70
+ffb9b0f
