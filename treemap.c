@@ -187,10 +187,13 @@ Pair * upperBound(TreeMap * tree, void* key) {
   TreeNode *Nodo = tree->root;
   Pair *Aux = NULL;
 
-  while(Nodo =! NULL){
+  while(Nodo != NULL){
     if(tree->lower_than(Nodo->pair->key, key) == 0){
       Aux = Nodo->pair;
       Nodo = Nodo->left;
+    }
+    else{
+      Nodo=Nodo->right;
     }
   }
   
