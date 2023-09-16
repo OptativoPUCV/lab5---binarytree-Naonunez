@@ -192,8 +192,9 @@ Pair * firstTreeMap(TreeMap * tree) {
   Pair *aux = NULL;
 
   while( Nodo != NULL){
+    aux = Nodo->pair; 
     Nodo = Nodo->left;
-    //aux = Nodo->pair; 
+    
   }
     return aux;
 }
