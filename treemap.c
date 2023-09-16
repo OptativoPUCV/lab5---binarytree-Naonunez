@@ -189,11 +189,12 @@ Pair * upperBound(TreeMap * tree, void* key) {
 
 Pair * firstTreeMap(TreeMap * tree) {
   TreeNode *Nodo = tree->root;
+  Pair *aux = NULL;
 
   while( Nodo != NULL){
     Nodo = Nodo->left;
   }
-    return Nodo;
+    return aux;
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
