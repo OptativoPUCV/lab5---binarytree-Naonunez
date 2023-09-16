@@ -220,7 +220,7 @@ Pair * nextTreeMap(TreeMap * tree) {
         return auxCurrent->pair;
       }
       else{
-        return auxCurrent->parent;
+        return auxCurrent->pair;
       }
     }
   }
