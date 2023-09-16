@@ -219,6 +219,9 @@ Pair * nextTreeMap(TreeMap * tree) {
         tree->current=auxCurrent;
         return auxCurrent->pair;
       }
+      else if (tree->lower_than(auxCurrent->parent->pair->key, tree->current->pair->key) == 1){
+        auxCurrent = auxCurrent->parent;
+      }
       else{
         return auxCurrent->pair;
       }
